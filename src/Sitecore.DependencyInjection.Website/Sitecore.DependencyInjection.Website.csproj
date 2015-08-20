@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="App_Config\Include\zzz.Sitecore.DependencyInjection.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -125,6 +126,12 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(ProjectDir)App_Config\Include\zzz.Sitecore.DependencyInjection.config" "$(SolutionDir)\NugetPackage\content"
+copy /Y "$(ProjectDir)App_Start\CastleInstallers.cs" "$(SolutionDir)\NugetPackage\content"
+copy /Y "$(ProjectDir)App_Start\Installers\MvcControllersInstaller.cs" "$(SolutionDir)\NugetPackage\content"
+copy /Y "$(ProjectDir)App_Start\Installers\ServicesInstaller.cs" "$(SolutionDir)\NugetPackage\content"</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
