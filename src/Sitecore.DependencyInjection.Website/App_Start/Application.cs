@@ -8,9 +8,6 @@ namespace Sitecore.DependencyInjection.Website.App_Start
     {
         protected void Application_Start()
         {
-            //Create a new WindsorDependencyResolver which implements a System.Web.Mvc.IDependencyResolver
-            var windsorDependecyResolver = new WindsorDependencyResolver(WindsorContainerContext.Instance);
-
             RegisterRoutes(RouteTable.Routes);
         }
 
