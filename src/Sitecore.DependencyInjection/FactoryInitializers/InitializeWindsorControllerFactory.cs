@@ -14,7 +14,7 @@ namespace Sitecore.DependencyInjection.FactoryInitializers
 
         protected virtual void SetControllerFactory(PipelineArgs args)
         {
-            ControllerBuilder.Current.SetControllerFactory((IControllerFactory)new WindsorControllerFactory(WindsorContainerContext.Instance, ControllerBuilder.Current.GetControllerFactory()));
+            ControllerBuilder.Current.SetControllerFactory(new WindsorControllerFactory(WindsorContainerContext.Instance, ControllerBuilder.Current.GetControllerFactory()));
         }
     }
 }

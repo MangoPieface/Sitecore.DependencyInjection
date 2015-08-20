@@ -46,7 +46,7 @@ namespace Sitecore.DependencyInjection.ControllerFactories
                 return null;
             }
 
-            // Retrieve the requested controller from Castle
+            // Retrieve the requested controller from Windsor
             if (Container.Kernel.HasComponent(controllerType))
             {
                 var controller = Container.Resolve(controllerType) as IController;
@@ -56,6 +56,8 @@ namespace Sitecore.DependencyInjection.ControllerFactories
                     return controller;
                 }
             }
+
+            //If no Controller found in Windsor, then use innerFactor
             return this.InnerFactory.CreateController(requestContext, controllerType.Name.Replace("Controller", string.Empty));
         }
 
