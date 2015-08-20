@@ -154,7 +154,7 @@ $RECYCLE.BIN/
 .DS_Store
 
 
-sc.lib/*.dll
+lib/*.dll
 
 
 
