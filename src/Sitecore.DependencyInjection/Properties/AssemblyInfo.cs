@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Sitecore.DependencyInjection")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Sitecore Dependency Injection Module")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyCompany("Eduserv")]
 [assembly: AssemblyProduct("Sitecore.DependencyInjection")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2015")]
+[assembly: AssemblyCopyright("GNU GENERAL PUBLIC LICENSE")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
