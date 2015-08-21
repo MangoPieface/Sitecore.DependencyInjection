@@ -8,21 +8,21 @@ namespace Sitecore.DependencyInjection.DependencyResolvers
 {
     public class WindsorDependencyResolver : IDependencyResolver
     {
-        private readonly IWindsorContainer container;
+        private readonly IWindsorContainer _container;
 
         public WindsorDependencyResolver(IWindsorContainer container)
         {
-            this.container = container;
+            this._container = container;
         }
 
         public object GetService(Type serviceType)
         {
-            return container.Kernel.HasComponent(serviceType) ? container.Resolve(serviceType) : null;
+            return _container.Kernel.HasComponent(serviceType) ? _container.Resolve(serviceType) : null;
         }
 
         public IEnumerable<object> GetServices(Type serviceType)
         {
-            return container.Kernel.HasComponent(serviceType) ? container.ResolveAll(serviceType).Cast<object>() : new object[] { };
+            return _container.Kernel.HasComponent(serviceType) ? _container.ResolveAll(serviceType).Cast<object>() : new object[] { };
         }
     }
 }
