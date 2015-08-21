@@ -4,24 +4,13 @@ namespace Sitecore.DependencyInjection.ContainerContexts
 {
     public static class WindsorContainerContext
     {
-        private static readonly object Padlock = new object();
-        private static IWindsorContainer _instance;
+        private static readonly IWindsorContainer _instance = new WindsorContainer();
 
         public static IWindsorContainer Instance
         {
             get
             {
-                lock (Padlock)
-                {
-                    return _instance ?? (_instance = new WindsorContainer());
-                }
-            }
-            set
-            {
-                lock (Padlock)
-                {
-                    _instance = value;
-                }
+                return _instance;
             }
         }
     }
