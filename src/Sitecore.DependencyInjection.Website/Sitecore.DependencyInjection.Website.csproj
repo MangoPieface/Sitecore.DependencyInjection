@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -93,7 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\Application.cs" />
-    <Compile Include="App_Start\CastleInstallers.cs" />
+    <Compile Include="App_Start\WindsorInstallerStarter.cs" />
     <Compile Include="App_Start\Installers\MvcControllersInstaller.cs" />
     <Compile Include="App_Start\Installers\ServicesInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,7 +133,7 @@
   </ProjectExtensions>
   <PropertyGroup>
     <PostBuildEvent>copy /Y "$(ProjectDir)App_Config\Include\zzz.Sitecore.DependencyInjection.config" "$(SolutionDir)\NugetPackage\content"
-copy /Y "$(ProjectDir)App_Start\CastleInstallers.cs" "$(SolutionDir)\NugetPackage\content"
+copy /Y "$(ProjectDir)App_Start\WindsorInstallerStarter.cs" "$(SolutionDir)\NugetPackage\content"
 copy /Y "$(ProjectDir)App_Start\Installers\MvcControllersInstaller.cs" "$(SolutionDir)\NugetPackage\content"
 copy /Y "$(ProjectDir)App_Start\Installers\ServicesInstaller.cs" "$(SolutionDir)\NugetPackage\content"</PostBuildEvent>
   </PropertyGroup>

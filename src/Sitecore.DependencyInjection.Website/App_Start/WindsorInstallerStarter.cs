@@ -5,11 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(Sitecore.DependencyInjection.Website.App_Start.CastleInstallers), "Start")]
+[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(Sitecore.DependencyInjection.Website.App_Start.WindsorInstallerStarter), "Start")]
 
 namespace Sitecore.DependencyInjection.Website.App_Start
 {
-    public class CastleInstallers
+    public class WindsorInstallerStarter
     {
         public static void Start()
         {
