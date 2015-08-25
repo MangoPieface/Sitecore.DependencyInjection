@@ -1,11 +1,10 @@
-﻿using Sitecore.DependencyInjection.ContainerContexts;
+﻿using Sitecore.ContentSearch.SolrProvider.CastleWindsorIntegration;
+using Sitecore.DependencyInjection.ContainerContexts;
+using Sitecore.DependencyInjection.Website.App_Start;
 using Sitecore.DependencyInjection.Website.App_Start.Installers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using WebActivatorEx;
 
-[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(Sitecore.DependencyInjection.Website.App_Start.WindsorInstallerStarter), "Start")]
+[assembly: PostApplicationStartMethod(typeof(WindsorInstallerStarter), "Start")]
 
 namespace Sitecore.DependencyInjection.Website.App_Start
 {
@@ -17,6 +16,8 @@ namespace Sitecore.DependencyInjection.Website.App_Start
             WindsorContainerContext.Instance.Install(new MvcControllersInstaller());
             //Register Services with WindsorContainer
             WindsorContainerContext.Instance.Install(new ServicesInstaller());
+            //Initialise Solr with WindsorContainer
+            //new WindsorSolrStartUp(WindsorContainerContext.Instance).Initialize();
         }
     }
 }
