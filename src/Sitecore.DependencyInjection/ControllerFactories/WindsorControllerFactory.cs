@@ -1,10 +1,7 @@
-﻿using Castle.Windsor;
-using Sitecore.Mvc.Helpers;
-using System;
-using System.Web;
+﻿using System;
 using System.Web.Mvc;
 using System.Web.Routing;
-using System.Web.SessionState;
+using Castle.Windsor;
 
 namespace Sitecore.DependencyInjection.ControllerFactories
 {

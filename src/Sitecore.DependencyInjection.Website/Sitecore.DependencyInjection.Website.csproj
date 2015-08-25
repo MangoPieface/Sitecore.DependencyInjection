@@ -52,6 +52,9 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.ContentSearch.SolrProvider.CastleWindsorIntegration">
+      <HintPath>..\..\lib\Sitecore.ContentSearch.SolrProvider.CastleWindsorIntegration.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\lib\Sitecore.Kernel.dll</HintPath>
     </Reference>
