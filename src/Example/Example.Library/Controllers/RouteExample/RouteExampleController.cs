@@ -12,9 +12,9 @@ namespace Example.Library.Controllers.RouteExample
             _service = service;
         }
 
-        public ActionResult Index()
+        public ActionResult Index(string id = "not specified")
         {
-            return Json(_service.GetPage(), JsonRequestBehavior.AllowGet);
+            return Json(_service.GetPage(id), JsonRequestBehavior.AllowGet);
         }
     }
 }

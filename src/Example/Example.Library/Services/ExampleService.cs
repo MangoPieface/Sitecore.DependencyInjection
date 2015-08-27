@@ -13,5 +13,10 @@ namespace Example.Library.Services
         {
             return new PageModel() { Title = "Hello from the service" };
         }
+
+        public PageModel GetPage(string id)
+        {
+            return new PageModel() { Title = "Hello from the service using id: " + id };
+        }
     }
 }
