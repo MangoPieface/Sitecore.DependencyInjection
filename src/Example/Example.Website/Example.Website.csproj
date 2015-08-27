@@ -99,7 +99,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\" />
     <Folder Include="App_Start\" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +115,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\GlassExample\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Sitecore.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Log4Net.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\AppSettings.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
