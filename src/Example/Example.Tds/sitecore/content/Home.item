@@ -310,7 +310,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: ec40e5fe-a42e-40d7-b3ea-f5d7053d7fc1
+revision: b5d0ab96-841e-438f-82e0-d66ab4310daa
 
 ----field----
 field: {75577384-3C97-45DA-A847-81B00500E250}
@@ -323,13 +323,14 @@ Sitecore Experience Platform
 field: {A60ACD61-A6DB-4182-8329-C957982CEC74}
 name: Text
 key: text
-content-length: 1409
+content-length: 1510
 
 <p style="line-height: 22px;">Test pages:</p>
 <p style="line-height: 22px;"><a href="~/link.aspx?_id=EEDA4BEC32EE40039C331630AD790291&amp;_z=z">Sitecore example page</a></p>
 <p style="line-height: 22px;"><span style="color: #000000;"><a href="~/link.aspx?_id=6DFE27338A5446698D3410D1CF0D6168&amp;_z=z">Injection example page</a></span></p>
 <p style="line-height: 22px;"><span style="color: #000000;"><a href="~/link.aspx?_id=3FF89F5C42EF4C918933F89AB3D188DB&amp;_z=z">Glass example page</a></span></p>
-<p style="line-height: 22px;"><span style="color: #000000;"><a href="/api/route-example">Route example</a></span></p>
+<p style="line-height: 22px;"><span style="color: #000000;"><a href="/api/routeexample">Route example</a></span></p>
+<p style="line-height: 22px;"><a href="/api/routeexample?id=123">Route example with parameter</a></p>
 <p style="line-height: 22px;">From a single connected platform that also integrates with other customer-facing platforms, to a single view of the customer in a big data marketing repository, to a completely eliminating much of the complexity that has previously held marketers back, the latest version of Sitecore makes customer experience highly achievable. Learn how the latest version of Sitecore gives marketers the complete data, integrated tools, and automation capabilities to engage customers throughout an iterative lifecycle &ndash; the technology foundation absolutely necessary to win customers for life.</p>
 <p>For further information, please go to the <a href="https://doc.sitecore.net/" target="_blank" title="Sitecore Documentation site">Sitecore Documentation site</a></p>
 ----field----
@@ -394,14 +395,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ec40e5fe-a42e-40d7-b3ea-f5d7053d7fc1
+b5d0ab96-841e-438f-82e0-d66ab4310daa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150827T225152Z
+20150827T234826Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
