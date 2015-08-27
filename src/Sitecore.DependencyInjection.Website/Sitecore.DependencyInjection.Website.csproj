@@ -137,6 +137,8 @@
   </ProjectExtensions>
   <PropertyGroup>
     <PostBuildEvent>copy /Y "$(ProjectDir)App_Config\Include\zzz.Sitecore.DependencyInjection.config" "$(SolutionDir)\NugetPackage\content"
+copy /Y "$(ProjectDir)App_Start\Application.cs" "$(SolutionDir)\NugetPackage\content"
+copy /Y "$(ProjectDir)Global.asax" "$(SolutionDir)\NugetPackage\content"
 copy /Y "$(ProjectDir)App_Start\WindsorInstallerStarter.cs" "$(SolutionDir)\NugetPackage\content"
 copy /Y "$(ProjectDir)App_Start\Installers\MvcControllersInstaller.cs" "$(SolutionDir)\NugetPackage\content"
 copy /Y "$(ProjectDir)App_Start\Installers\ServicesInstaller.cs" "$(SolutionDir)\NugetPackage\content"</PostBuildEvent>
