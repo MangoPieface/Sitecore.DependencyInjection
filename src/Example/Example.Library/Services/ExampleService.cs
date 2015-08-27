@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Example.Library.Services
 {
-    public class DefaultService : IExampleService
+    public class ExampleService : IExampleService
     {
         public PageModel GetPage()
         {
