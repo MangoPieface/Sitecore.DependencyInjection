@@ -9,7 +9,7 @@ namespace Sitecore.DependencyInjection.Website.App_Start.Installers
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
-            //container.Register(Classes.FromAssemblyNamed("ExampleLibrary.Controllers").BasedOn<IController>().LifestyleTransient());
+            //container.Register(Classes.FromAssemblyNamed("Example.Library").BasedOn<IController>().LifestyleTransient());
         }
     }
 }
