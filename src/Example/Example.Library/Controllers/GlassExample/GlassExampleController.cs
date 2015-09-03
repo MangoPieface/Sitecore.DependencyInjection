@@ -9,9 +9,9 @@ namespace Example.Library.Controllers.InjectionExample
     {
         private ISitecoreContext _context;
 
-        public GlassExampleController()
+        public GlassExampleController(ISitecoreContext context)
         {
-            _context = new SitecoreContext();
+            _context = context;
         }
 
         public ActionResult Index()
