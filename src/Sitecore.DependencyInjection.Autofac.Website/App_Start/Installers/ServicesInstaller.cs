@@ -15,6 +15,8 @@ namespace Sitecore.DependencyInjection.Autofac.Website.Installers
             }
 
             builder.RegisterType<ExampleService>().As<IExampleService>().InstancePerDependency();
+
+            //Sitecore Glass context this should *just work* with Glass 4.X
             builder.RegisterType<SitecoreContext>().As<ISitecoreContext>().InstancePerDependency();
 
         }
