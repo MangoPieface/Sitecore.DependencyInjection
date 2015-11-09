@@ -1,6 +1,6 @@
 ﻿using System;
 using Autofac;
-using Example.Library.Services;
+//using Example.Library.Services;
 
 namespace Sitecore.DependencyInjection.Autofac.Website.Installers
 {

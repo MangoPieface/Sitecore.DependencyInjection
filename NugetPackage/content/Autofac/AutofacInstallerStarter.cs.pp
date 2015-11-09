@@ -7,7 +7,7 @@ using WebActivatorEx;
 
 [assembly: PostApplicationStartMethod(typeof(AutofacInstallerStarter), "Start")]
 
-namespace Sitecore.DependencyInjection.Autofac.Website
+namespace $rootnamespace$
 {
     public class AutofacInstallerStarter
     {

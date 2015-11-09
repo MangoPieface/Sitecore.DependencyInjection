@@ -1,7 +1,6 @@
 ﻿using System;
 using Autofac;
 using Autofac.Integration.Mvc;
-using Example.Library.Controllers.InjectionExample;
 
 namespace $rootnamespace$.Installers
 {
@@ -24,7 +23,7 @@ namespace $rootnamespace$.Installers
                     throw new ArgumentNullException(nameof(builder));
                 }
 
-                builder.RegisterControllers(typeof(InjectionExampleController).Assembly);
+                //builder.RegisterControllers(typeof(InjectionExampleController).Assembly);
             }
         }
 }

@@ -2,7 +2,7 @@
 using Autofac;
 //using Example.Library.Services;
 
-namespace $rootnamespace$.Website.Installers
+namespace $rootnamespace$.Installers
 {
     public class ServicesInstaller
     {

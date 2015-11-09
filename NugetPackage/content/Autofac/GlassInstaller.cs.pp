@@ -1,7 +1,6 @@
 ﻿using System;
 using Autofac;
-using Example.Library.Services;
-using Glass.Mapper.Sc;
+//using Glass.Mapper.Sc;
 
 namespace $rootnamespace$.Installers
 {
