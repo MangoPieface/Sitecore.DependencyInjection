@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Sitecore.DependencyInjection.Autofac</id>
+    <version>1.0.0.0</version>
+    <title>Sitecore Dependency Injection Module</title>
+    <authors>Eduserv</authors>
+    <owners>Eduserv</owners>
+    <licenseUrl>https://github.com/Eduserv/Sitecore.DependencyInjection/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Eduserv/Sitecore.DependencyInjection</projectUrl>
+	<iconUrl>https://raw.githubusercontent.com/Eduserv/Sitecore.DependencyInjection/master/NugetPackage/eduserv.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Nuget package for Sitecore solutions that allows development teams to easily and safely use their preferred inversion of control (IoC) container with Sitecore. This is useful for dependency injection into Sitecore MVC controllers.</description>
+    <dependencies>
+      <dependency id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
+      <dependency id="WebActivatorEx" version="2.0.6" />
+      <dependency id="Autofac" version="3.5.2" />
+      <dependency id="Autofac.Mvc" version="5.3.3.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="content\Autofac\Global.asax.pp" target="content\Global.asax.pp" />
+	<file src="content\Autofac\Application.cs.pp" target="content\App_Start\Application.cs.pp" />
+	<file src="content\Autofac\AutofacInstallerStarter.cs.pp" target="content\App_Start\WindsorInstallerStarter.cs.pp" />
+    <file src="content\Autofac\MvcControllersInstaller.cs.pp" target="content\App_Start\Installers\MvcControllersInstaller.cs.pp" />
+    <file src="content\Autofac\ServicesInstaller.cs.pp" target="content\App_Start\Installers\ServicesInstaller.cs.pp" />
+	<file src="content\Autofac\GlassInstaller.cs.pp" target="content\App_Start\Installers\GlassInstaller.cs.pp" />
+  </files>
+</package>
