@@ -134,6 +134,7 @@
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
     <Compile Include="App_Start\Installers\MvcControllersInstaller.cs" />
+    <Compile Include="App_Start\Installers\GlassInstaller.cs" />
     <Compile Include="App_Start\Installers\ServicesInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -170,8 +171,11 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>copy /Y "$(ProjectDir)App_Start\Application.cs" "$(SolutionDir)\NugetPackage\content\Autofac\"
+copy /Y "$(ProjectDir)Global.asax" "$(SolutionDir)\NugetPackage\content\Autofac\"
+copy /Y "$(ProjectDir)App_Start\AutofacInstallerStarter.cs" "$(SolutionDir)\NugetPackage\content\Autofac\"
+copy /Y "$(ProjectDir)App_Start\Installers\MvcControllersInstaller.cs" "$(SolutionDir)\NugetPackage\content\Autofac"
+copy /Y "$(ProjectDir)App_Start\Installers\GlassInstaller.cs" "$(SolutionDir)\NugetPackage\content\Autofac"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

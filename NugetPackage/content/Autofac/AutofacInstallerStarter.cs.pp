@@ -1,8 +1,8 @@
 ﻿using System.Web.Mvc;
 using Autofac;
 using Autofac.Integration.Mvc;
-using Sitecore.DependencyInjection.Autofac.Website;
-using Sitecore.DependencyInjection.Autofac.Website.Installers;
+using $rootnamespace$;
+using $rootnamespace$.Installers;
 using WebActivatorEx;
 
 [assembly: PostApplicationStartMethod(typeof(AutofacInstallerStarter), "Start")]
