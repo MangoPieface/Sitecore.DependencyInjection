@@ -158,3 +158,5 @@ lib/*.dll
 
 
 packages
+.vs/
+*.GhostDoc.xml
